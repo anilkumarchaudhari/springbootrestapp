@@ -31,6 +31,13 @@ public class DataController {
     }
 	
 	
+	
+	@ResponseBody
+    @RequestMapping("/get/user/info")
+    public String getUserInfo() {
+        return "Hello ABC";
+    }
+	
 	//@PostMapping  -- Post method -- create user - request body -- status 201
 	
 	//@PutMapping -- put method -- update record --  request body
